@@ -195,16 +195,15 @@ input:checked ~ .bubble::after {
 	background-color: var(--primary);
 }
 
-.todo-item.done .todo-content input {
+.todo-item.done, .todo-item.done input{
 	text-decoration: line-through;
 	color: black;
+}
+
+.todo-item.done .todo-date, .todo-item.done .todo-content input {
 	opacity: 0.6;
 }
-.todo-item.done .todo-date {
-	text-decoration: line-through;
-	color: black;
-	opacity: 0.6;
-}
+
 .todo-item.done {
 	opacity: 0.7;
 }
